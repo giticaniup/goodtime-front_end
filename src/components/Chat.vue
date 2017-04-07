@@ -1,5 +1,6 @@
 <template>
   <div>
+    <mt-button type="primary">default</mt-button>
     <Row>
       <Col span="12">col-12</Col>
       <Col span="12">col-12</Col>
