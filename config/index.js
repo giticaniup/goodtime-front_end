@@ -28,11 +28,18 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/fxiaoke': {
+      '/fxiaoke': {
         target: 'http://172.31.100.16:8081',
         changeOrigin: true,
         pathRewrite: {
           '^/fxiaoke': '/fxiaoke'
+        }
+      },
+      '/goodtime': {
+        target: 'http://localhost:8082',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/goodtime': '/goodtime'
         }
       }
     },

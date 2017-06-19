@@ -8,6 +8,7 @@ import 'iview/dist/styles/iview.css'
 import iView from 'iview'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -20,6 +21,7 @@ Vue.use(MintUI)
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
